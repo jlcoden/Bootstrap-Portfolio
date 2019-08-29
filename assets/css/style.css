@@ -21,6 +21,7 @@ h3 {
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
   margin-left: 15px; 
+  border-bottom: solid #cccccc .5px; 
   
 }
 
@@ -64,14 +65,15 @@ span.navbar-brand .h1 {
   background-color: #4aaaa5;
   font-size: 125%;
   text-align: center;
-  margin: 0px; 
   width: 130px; 
   line-height: 200%;  
   width: 150px;
   color: #ffffff;
 }
 
-
+.aboutMe{
+  border: solid #cccccc .5px; 
+}
 
 /*Style for footer */
 footer {
