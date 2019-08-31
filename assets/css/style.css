@@ -19,20 +19,81 @@ p {
   padding-right:15px; 
 }
 
-
+/* style for box div on  portfolio page */
 .box{
   position: relative; 
   display: inline-block;
+  margin-top: 15px; 
+  margin-bottom: 30px; 
 }
 
+/*Style for h3 tags in project boxes on porfolio page */
+.box h3{
+  background-color: #4aaaa5;
+  z-index: 999;
+  position: absolute;
+  top: 78%;
+  font-size: 15px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  color:  #ffffff;
+  text-align: center; 
+  line-height: 1.5em; 
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  display: inline-block;
+}
 
-/*Style for images in project boxes for porfolio page */
+@media screen and (min-width: 400px) {
+  .box h3 {
+    background-color: #4aaaa5;
+    z-index: 999;
+    position: absolute;
+    top: 78%;
+    font-size: 15px;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    color:  #ffffff;
+    text-align: center; 
+    line-height: 1.5em; 
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    display: inline-block;
+    width:  40%; 
+
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .box h3 {
+    background-color: #4aaaa5;
+    z-index: 999;
+    position: absolute;
+    top: 78%;
+    font-size: 15px;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    color:  #ffffff;
+    text-align: center; 
+    line-height: 1.5em; 
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    display: inline-block;
+    width: 80%; 
+
+  }
+}
+
+/*Style for images in project boxes on porfolio page */
 .box img {
   position: relative;
   width: 200px; 
   height: 200px; 
   border: solid #cccccc 1px; 
   object-fit: cover;
+  margin-right: 20px; 
+  margin-bottom: 15px; 
+  margin-top: 15px; 
 }
 
 /*Style for h3 tags */
@@ -102,7 +163,7 @@ footer {
   position:fixed;
   font-size: 10px; 
   border-top: solid #4aaaa5 10px;
-  z-index: 5;
+  z-index: 999;
   }
 
 /*Style for paragrpah text in footer */
