@@ -1,7 +1,13 @@
 /*Style for body */
 body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-image: url("../images/tiny-squares.png");
   height: 100%; 
+}
+
+/* additional css for column/row resizing on portfolio page */
+* {
+  box-sizing: border-box;
 }
 
 /*Style for paragraphs on index.html page */
@@ -20,11 +26,6 @@ p {
   padding-right:15px; 
 }
 
-/* style for box div on  portfolio page */
-
-
-
-
 
 /*Style for h5 tags in project boxes on porfolio page */
 h3 {
@@ -40,15 +41,6 @@ h3 {
   position: relative; 
   top: -30px; 
   width: 200px; 
-}
-
-
-/*Style for images in project boxes on porfolio page */
-
-
-
-* {
-  box-sizing: border-box;
 }
 
 
@@ -79,24 +71,6 @@ h3 {
 
 }
 
-
-/*.card{
-  height: auto; 
-  width: 45%;
-  margin-bottom: 20px;
-  margin-right: 20px; 
-  border: solid #cccccc 1px; 
-  display: flex; 
-  float: left; 
-
-}
-
-.card-img-top {
-  width: 100%;
-  height: 20vw;
-
-}
-*/
 
 .portfolioContainer {
   margin-bottom: 20px;
@@ -150,8 +124,6 @@ h2 {
 }
 
 
-/*Style for container */
-
 
 /*Style for navbar */
 nav.navbar{
@@ -174,6 +146,11 @@ span.navbar-brand .h1 {
   background-color: #4aaaa5;
 }
 
+.nav-link{
+  border-left: 1px solid #efefef;
+  line-height: 18px;
+  color: #999;
+}
 
 /*style for name div in nav container*/
 .name {
