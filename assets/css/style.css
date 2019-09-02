@@ -20,57 +20,106 @@ p {
 }
 
 /* style for box div on  portfolio page */
-.boxContainer{
-  position: relative; 
-  margin-bottom: 30px; 
-  padding: 0px; 
-}
 
-.row{
-  margin-right: 500px; 
-}
 
-/*Style for h3 tags in project boxes on porfolio page */
-.boxContainer h3{
+
+
+
+/*Style for h5 tags in project boxes on porfolio page */
+h3 {
   background-color: #4aaaa5;
-  z-index: 999;
-  position: absolute;
-  top: 78%;
+  z-index: 2;
+  top: 50%;
   font-size: 15px;
   height: 26px;
-  padding: 0;
-  margin: 0;
   color:  #ffffff;
-  text-align: center; 
   line-height: 1.5em; 
   font-family: 'Georgia', Times, Times New Roman, serif;
-
+  width: 100%; 
+  position: relative; 
+  top: -30px; 
+  width: 200px; 
 }
 
 
 /*Style for images in project boxes on porfolio page */
-.boxContainer img {
 
-  width: 200px; 
-  height: 200px; 
-  border: solid #cccccc 1px; 
-  object-fit: cover;
-  margin-bottom: 15px; 
-  margin-top: 15px; 
-  margin-right: 0px; 
-  padding: 0px; 
- 
+
+
+* {
+  box-sizing: border-box;
 }
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+
+.column {
+  float: right;
+  width: 25%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.portfolioContainer img {
+  position: relative;
+  width: 200px; 
+  height: 160px; 
+  border: solid #cccccc 1px; 
+
+}
+
+
+/*.card{
+  height: auto; 
+  width: 45%;
+  margin-bottom: 20px;
+  margin-right: 20px; 
+  border: solid #cccccc 1px; 
+  display: flex; 
+  float: left; 
+
+}
+
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+
+}
+*/
+
+.portfolioContainer {
+  margin-bottom: 20px;
+}
+
+
 
 /*Style for h2 tags */
 h2 {
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
+  border-bottom: 3px solid #dddddd;
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  font-size: 30px;
+
 }
 
 .aboutMeTitle{
   margin-left:10px; 
-  margin-top: 15px;
+  padding-top: 15px;
   margin-bottom: 15px;  
   border-bottom: solid #cccccc 1px;  
   padding-bottom: 15px; 
@@ -79,7 +128,7 @@ h2 {
 }
 
 .contactMeTitle{
-  margin-top: 15px;
+  padding-top: 15px;
   border-bottom: solid #cccccc 1px;  
   padding-bottom: 15px; 
   color: #4aaaa5;
@@ -87,22 +136,18 @@ h2 {
 
 }
 .portfolioTitle{
-  margin-top: 15px;
   border-bottom: solid #cccccc 1px;  
-  padding-bottom: 15px; 
+  margin-bottom: 0px; 
+  padding-bottom: 10px; 
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
-
+  background-color: white; 
+  margin-bottom: 10px; 
+  padding-top: 10px; 
 }
 
 
 /*Style for container */
-.container{
-  width: 960px; 
-  height: auto; 
-}
-
-
 
 
 /*Style for navbar */
@@ -113,7 +158,9 @@ nav.navbar{
   background-color: #4aaaa5;
   background-color:  #ffffff;
   border-bottom: solid #cccccc 1px;  
+  padding-bottom: 0px; 
 }
+
 
 /*Style for h1 in navbar */
 span.navbar-brand .h1 {
@@ -124,22 +171,49 @@ span.navbar-brand .h1 {
   background-color: #4aaaa5;
 }
 
-/*Style for navbar--brand, div for name in left-hand corner */
-.navbar-brand{
-  background-color: #4aaaa5;
+
+/*style for name div in nav container*/
+.name {
   font-size: 125%;
   text-align: center;
-  width: 130px; 
-  line-height: 200%;  
-  width: 150px;
+  float: left; 
+  background-color: #4aaaa5;
+  padding: 0px; 
+  margin:0px; 
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
   color: #ffffff;
+  line-height: 90px;
+}
+
+/*Style for hyperlink in name div*/
+.namelink{
+  font-weight: bold; 
+  text-align: center; 
+  line-height: 3em;
+  }
+/*Style for hyperlink in name div*/
+a.namelink:link 
+{ 
+    text-decoration:none; 
+    color: #ffffff;
+}
+  /*Style for hyperlink in name div when visited*/
+a.namelink:visited {
+  color: #ffffff;
+}
+/*Style for hyperlink in name div when hovering*/
+a.namelink:hover {
+  color: #777777;
 }
 
 /*Style for aboutMe section */
 .aboutMe{
   border: solid #cccccc .5px; 
-  margin-top: 15px; 
   margin-bottom: 30px; 
+  padding-right: 0px; 
   
 }
 
@@ -183,4 +257,13 @@ button[type=submit] {
 /* When moving the mouse over the submit button, add a darker gray color */
 button[type=submit]:hover {
   background-color: #666666;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 640px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
