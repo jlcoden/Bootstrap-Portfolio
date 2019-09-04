@@ -40,6 +40,8 @@ h3 {
   position: relative; 
   top: -30px; 
   width: 200px; 
+  text-align: center; 
+  font-weight: 700;
 }
 
 /* style for rows */
@@ -70,7 +72,6 @@ h3 {
   border: solid #cccccc 1px; 
 
 }
-
 
 .portfolioContainer {
   margin-bottom: 100px;
@@ -225,7 +226,7 @@ font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 .contactMe{
   border: solid #cccccc .5px; 
   margin-top: 15px; 
-  margin-bottom: 30px; 
+  margin-bottom: 50px; 
   flex: 1 0 auto;
   height: 100%; 
 }
