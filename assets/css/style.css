@@ -76,6 +76,7 @@ h3 {
   margin-bottom: 100px;
   flex: 1 0 auto;
   height: 100%; 
+  border: solid #cccccc .5px; 
 }
 
 /*Style for h2 tags */
@@ -95,33 +96,35 @@ h2 {
 /* style for h2 About Me title */
 .aboutMeTitle{
   margin-left:10px; 
+  margin-right: 10px; 
   padding-top: 15px;
   margin-bottom: 15px;  
-  border-bottom: solid #cccccc 1px;  
   padding-bottom: 15px; 
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
+  border-bottom: 3px solid #dddddd;
 }
 
 /* style for h2 Contact Me title */
 .contactMeTitle{
-  padding-top: 15px;
-  border-bottom: solid #cccccc 1px;  
+  padding-top: 15px; 
   padding-bottom: 15px; 
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
+  border-bottom: 3px solid #dddddd;
 
 }
 /* style for portfolio title */
 .portfolioTitle{
-  border-bottom: solid #cccccc 1px;  
   margin-bottom: 0px; 
   padding-bottom: 10px; 
   color: #4aaaa5;
-  font-family: 'Georgia', Times, Times New Roman, serif;
   background-color: white; 
   margin-bottom: 10px; 
-  padding-top: 10px; 
+  margin-top: 15px; 
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  border-bottom: 3px solid #dddddd;
 }
 
 /*Style for navbar */
