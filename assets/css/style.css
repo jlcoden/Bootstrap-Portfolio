@@ -26,8 +26,7 @@ p {
   padding-right:15px; 
 }
 
-
-/*Style for h5 tags in project boxes on porfolio page */
+/*Style for h3 tags for project boxes on porfolio page */
 h3 {
   background-color: #4aaaa5;
   z-index: 2;
@@ -43,14 +42,14 @@ h3 {
   width: 200px; 
 }
 
-
+/* style for rows */
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 2px;
 }
 
-
+/* style for columns */
 .column {
   float: right;
   width: 25%;
@@ -63,6 +62,7 @@ h3 {
   display: table;
 }
 
+/* style for images in portfolio container */
 .portfolioContainer img {
   position: relative;
   width: 200px; 
@@ -73,12 +73,10 @@ h3 {
 
 
 .portfolioContainer {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   flex: 1 0 auto;
   height: 100%; 
 }
-
-
 
 /*Style for h2 tags */
 h2 {
@@ -94,6 +92,7 @@ h2 {
 
 }
 
+/* style for h2 About Me title */
 .aboutMeTitle{
   margin-left:10px; 
   padding-top: 15px;
@@ -104,6 +103,7 @@ h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+/* style for h2 Contact Me title */
 .contactMeTitle{
   padding-top: 15px;
   border-bottom: solid #cccccc 1px;  
@@ -112,6 +112,7 @@ h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
 
 }
+/* style for portfolio title */
 .portfolioTitle{
   border-bottom: solid #cccccc 1px;  
   margin-bottom: 0px; 
@@ -122,8 +123,6 @@ h2 {
   margin-bottom: 10px; 
   padding-top: 10px; 
 }
-
-
 
 /*Style for navbar */
 nav.navbar{
@@ -146,13 +145,14 @@ span.navbar-brand .h1 {
   background-color: #4aaaa5;
 }
 
+/* style for nav-link */
 .nav-link{
   border-left: 1px solid #efefef;
   line-height: 18px;
   color: #999;
 }
 
-/*style for name div in nav container*/
+/*style for name div/logo in nav container*/
 .name {
   font-size: 125%;
   text-align: center;
@@ -168,7 +168,7 @@ span.navbar-brand .h1 {
   line-height: 90px;
 }
 
-/*Style for hyperlink in name div*/
+/*Style for namelink div*/
 .namelink{
   font-weight: bold; 
   text-align: center; 
@@ -218,10 +218,6 @@ color: #aaa;
 font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#sticky-footer {
-  flex-shrink: none;
-}
-
 /*Style for contactMe div on Contact page */ 
 .contactMe{
   border: solid #cccccc .5px; 
@@ -248,7 +244,7 @@ button[type=submit]:hover {
 }
 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* make columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 640px) {
   .column {
     flex: 100%;
