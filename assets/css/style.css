@@ -113,7 +113,6 @@ h2 {
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
   border-bottom: 3px solid #dddddd;
-
 }
 /* style for portfolio title */
 .portfolioTitle{
@@ -226,7 +225,7 @@ font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 .contactMe{
   border: solid #cccccc .5px; 
   margin-top: 15px; 
-  margin-bottom: 50px; 
+  margin-bottom: 70px; 
   flex: 1 0 auto;
   height: 100%; 
 }
