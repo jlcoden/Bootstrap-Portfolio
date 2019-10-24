@@ -3,9 +3,10 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -13,6 +14,17 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Contact Me</title>
   </head>
@@ -59,7 +71,7 @@
       <!--Contact me h2 title-->
       <h2 class="contactMeTitle">Contact Me</h2>
       <!--Start Form-->
-      <form>
+      <form id="contactForm">
         <!--Name field-->
         <div class="form-group">
           <label for="inputName">Name</label>
@@ -73,11 +85,11 @@
         </div>
         <!--Email field-->
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label for="inputEmail">Email address</label>
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
+            id="inputEmail"
             placeholder="Enter Email"
           />
         </div>
@@ -117,8 +129,26 @@
     <!-- Sticky Footer at bottom of page-->
     <footer id="sticky-footer" class="py-4 text-white-50">
       <div class="container text-center">
-        <p class="footer">Copyright &copy;</p>
+        <div class="icon social in">
+          <a
+            href="https://www.linkedin.com/in/joshua-cosson-30a00794/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="icon social gh">
+          <a href="https://github.com/jlcoden" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </div>
+
+        <p class="footer">
+          Copyright &copy;
+        </p>
       </div>
     </footer>
+
+    <script src="assets/javascript/contact.js"></script>
   </body>
 </html>
