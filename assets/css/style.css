@@ -90,7 +90,7 @@ h3 {
 }
 
 .portfolioContainer {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   flex: 1 0 auto;
   height: 100%;
   border: solid #cccccc 0.5px;
@@ -217,7 +217,7 @@ p.footer {
 /*Style for contactMe div on Contact page */
 .contactMe {
   border: solid #cccccc 0.5px;
-  margin-bottom: 50px;
+  margin-bottom: 140px;
   flex: 1 0 auto;
   height: 100%;
   padding: 10px;
@@ -297,6 +297,10 @@ button[type="submit"]:hover {
 }
 
 .icon.social.in i {
+  left: 11px;
+}
+
+.icon.social.resume i {
   left: 11px;
 }
 

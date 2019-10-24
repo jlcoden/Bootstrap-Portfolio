@@ -43,6 +43,7 @@ $(".btn").on("click", function(event) {
   $("#nameInput").val("");
   $("#emailInput").val("");
   $("#commentInput").val("");
+  $("form").trigger("reset");
 });
 
 // 3. Create Firebase event for adding employee to the database and a row in the html when a user adds an entry
