@@ -1,6 +1,6 @@
 # Bootstrap-Portfolio
 
-This custom portfolio displays information about me, as well as shows several of the projects completed in UW's coding bootcamp. The potfolio is built off of html, css, and utlizies the bootstrap library.
+This custom portfolio displays information about me, as well as shows several of the projects completed in UW's coding bootcamp. The portfolio is built off of html, css, and utlizies the bootstrap library.
 
 **Table of Contents**
 
